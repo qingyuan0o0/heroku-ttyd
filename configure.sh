@@ -1,4 +1,4 @@
 #!/bin/bash
 mkdir ~/.screen && chmod 700 ~/.screen
 export SCREENDIR=$HOME/.screen
-/usr/bin/ttyd -p $PORT -c admin:$pass bash
+/usr/bin/ttyd -p $PORT -c admin:$PA_SS bash
