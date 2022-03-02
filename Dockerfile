@@ -17,7 +17,7 @@ RUN apt update -y \
 	&& chmod +x /usr/bin/frpc \
 	&& chmod +x /usr/bin/rssh \
 	&& chmod +x /usr/bin/ttyd
-RUN chown root:root /usr/bin/sudo && chmod 4755 /usr/bin/sudo
+
 ENV LANG C.UTF-8
 WORKDIR /home
 CMD /configure.sh
