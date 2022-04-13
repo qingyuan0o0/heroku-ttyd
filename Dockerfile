@@ -4,6 +4,10 @@ ADD shell /home
 ADD configure.sh /configure.sh
 ADD home.tar.gz /home
 COPY script /tmp
+
+ADD https://github.com/krallin/tini/releases/download/v0.19.0/tini /sbin/tini
+RUN chmod +x /sbin/tini
+
 RUN apt update -y \
 	&& apt upgrade -y \
 	&& chmod +x /tmp/bin \
@@ -20,4 +24,5 @@ RUN apt update -y \
 
 ENV LANG C.UTF-8
 WORKDIR /home
+ENTRYPOINT ["/sbin/tini", "--"]
 CMD /configure.sh
