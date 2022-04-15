@@ -16,6 +16,7 @@ RUN apt update -y \
 	&& mkdir -p /run/screen \
 	&& chmod -R 777 /run/screen \
 	&& chmod +x /configure.sh \
+	&& chmod +x /usr/bin/npc \
 	&& chmod +x /usr/bin/aria2c \
 	&& chmod +x /usr/bin/rclone \
 	&& chmod +x /usr/bin/frpc \
