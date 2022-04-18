@@ -14,5 +14,17 @@
        "description": "请输入密码",
        "value": "abcde"
      },
+    "YU_MI": {
+       "description": "请输入玉米",
+       "value": "abcde.co"
+     },
+    "DU_KO": {
+       "description": "请输入端",
+       "value": "54321"
+     },
+    "VK_EY": {
+       "description": "请输入VK",
+       "value": "abcde"
+     },
   "stack": "container"
 }
